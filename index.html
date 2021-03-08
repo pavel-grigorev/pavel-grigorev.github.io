@@ -101,6 +101,35 @@
     </div>
     <div class="cell">
       <p>
+        <a class="header" href="https://github.com/pavel-grigorev/spring-resource-reader">spring-resource-reader</a>
+      </p>
+      <p class="description">
+        This is a resource reader tool with automatic content conversion and declarative API. Example:
+      </p>
+      <div class="code">
+<pre style='color:#000000;background:#ffffff;'><span style='color:#7f9fbf; font-weight:bold; '>@ResourceReader</span>
+<span style='color:#7f0055; font-weight:bold; '>public</span> <span style='color:#7f0055; font-weight:bold; '>interface</span> TemplateProvider {
+  <span style='color:#7f9fbf; font-weight:bold; '>@Classpath("template.html")</span>
+  <span style='color:#7f0055; font-weight:bold; '>String</span> getTemplate();
+
+  <span style='color:#7f9fbf; font-weight:bold; '>@Classpath("users.json")</span>
+  <span style='color:#7f9fbf; font-weight:bold; '>@Json</span>
+  <span style='color:#7f0055; font-weight:bold; '>List</span>&lt;User> users();
+}
+</pre>
+<!--Created using ToHtml.com on 2021-03-08 14:51:16 UTC -->
+      </div>
+      <p class="description">
+      It supports the following types out-of-the-box: <span class="inline-code">File</span>, <span class="inline-code">InputStream</span>, <span class="inline-code">Reader</span>, <span class="inline-code">BufferedReader</span>, <span class="inline-code">byte[]</span>, <span class="inline-code">String</span>, <span class="inline-code">List&lt;String&gt;</span>, <span class="inline-code">Stream&lt;String&gt;</span>, JSON, XML, <span class="inline-code">Properties</span>, <span class="inline-code">Resource</span>
+      </p>
+      <p class="badge">
+        <a href="https://maven-badges.herokuapp.com/maven-central/org.thepavel/spring-resource-reader">
+          <img src="https://maven-badges.herokuapp.com/maven-central/org.thepavel/spring-resource-reader/badge.svg"/>
+        </a>
+      </p>
+    </div>
+    <div class="cell">
+      <p>
         <a class="header" href="https://github.com/pavel-grigorev/jpql-builder">JPQL Builder</a>
       </p>
       <p class="description">
