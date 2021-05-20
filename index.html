@@ -130,35 +130,6 @@
     </div>
     <div class="cell">
       <p>
-        <a class="header" href="https://github.com/pavel-grigorev/jpql-builder">JPQL Builder</a>
-      </p>
-      <p class="description">
-        Dynamic JPQL query builder. Provides type safety and fluent API. Example:
-      </p>
-      <div class="code">
-<pre style='color:#000000;background:#ffffff;'>
-SelectBuilder builder = JpqlBuilder.selectBuilder();
-Company c = builder.from(Company.class); <span style='color:#3f7f59; '>// Company is an entity class</span>
-
-Select select = builder.select(c);
-select.where(c.getStatus()).isNot(Status.DELETED).orderBy(c.getName());
-
-System.out.println("Query: " + select.getQueryString());
-System.out.println("Params: " + select.getParameters());
-</pre>
-<!--Created using ToHtml.com on 2021-02-19 10:00:42 UTC -->
-      </div>
-      <p class="description">
-        In this example, <span class="inline-code">isNot()</span> can only accept objects of type matching the <span class="inline-code">c.getStatus()</span> return type, making sure to throw a compile-time error in case the <span class="inline-code">status</span> field type changes from <span class="inline-code">Enum</span> to <span class="inline-code">String</span>, for instance.
-      </p>
-      <p class="badge">
-        <a href="https://maven-badges.herokuapp.com/maven-central/org.thepavel/jpql-builder">
-          <img src="https://maven-badges.herokuapp.com/maven-central/org.thepavel/jpql-builder/badge.svg"/>
-        </a>
-      </p>
-    </div>
-    <div class="cell">
-      <p>
         <a class="header" href="https://github.com/pavel-grigorev/cuba-entity-loader">Entity Loader add-on for the CUBA Platform</a>
       </p>
       <p class="description">
